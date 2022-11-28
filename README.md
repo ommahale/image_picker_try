@@ -4,8 +4,13 @@ A new Flutter project.
 
 
 Basic implementation of Image picker package provided for flutter
+### App UI:
+<img src="Screenshot_2022-11-28-17-13-28-910_com.example.image_picker_try.jpg" alt="UI Screenshot" width="300"/>
 
-## Getting Started
+### Install Dependencies:
+Type `flutter pub get image-picker` to install image-picker package in your pubspec.yaml file if it is not present.To ron app type `flutter run` in your terminal and it will automatically start a debug session if you have a Mobile connected with USB debugging enabled or if you have installed any android emulator or ios simulator
+
+### Getting Started
 
 This project is a starting point for a Flutter application.
 
