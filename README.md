@@ -1,8 +1,9 @@
 # image_picker_try
 
 A new Flutter project.
-##Basic implementation of Image picker package provided for flutter
-UI layeout:
+
+
+Basic implementation of Image picker package provided for flutter
 
 ## Getting Started
 
