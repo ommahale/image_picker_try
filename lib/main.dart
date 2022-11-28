@@ -58,31 +58,45 @@ class _MyHomePageState extends State<MyHomePage> {
         centerTitle: true,
       ),
       body: Center(
-          child: Column(
-        children: [
-          _image != null
-              ? Image.file(_image!)
-              : Image.network(
-                  'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'),
-          TextButton(
-              onPressed: () {
-                getImage(true);
-              },
-              child: Center(
-                child: Row(
-                  children: [Icon(Icons.camera_outlined), Text('Camera')],
-                ),
-              )),
-          TextButton(
-              onPressed: () {
-                getImage(false);
-              },
-              child: Center(
-                child: Row(
-                  children: [Icon(Icons.image_outlined), Text('Gallery')],
-                ),
-              ))
-        ],
+          child: SingleChildScrollView(
+        child: Column(
+          children: [
+            _image != null
+                ? Image.file(_image!)
+                : Image.network(
+                    'https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885__480.jpg'),
+            ElevatedButton(
+                onPressed: () {
+                  getImage(true);
+                },
+                child: Center(
+                  child: Row(
+                    children: const [
+                      SizedBox(
+                        width: 150,
+                      ),
+                      Icon(Icons.camera_outlined),
+                      Text('Camera')
+                    ],
+                  ),
+                )),
+            ElevatedButton(
+                onPressed: () {
+                  getImage(false);
+                },
+                child: Center(
+                  child: Row(
+                    children: const [
+                      SizedBox(
+                        width: 155,
+                      ),
+                      Icon(Icons.image_outlined),
+                      Text('Gallery')
+                    ],
+                  ),
+                ))
+          ],
+        ),
       )),
     );
   }
